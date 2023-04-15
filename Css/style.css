@@ -1,0 +1,14 @@
+/*Aula 01 - 01/04/23 */
+
+body, ul {
+    margin: 456px;
+    padding: 300px;
+}
+
+#menu {
+    height: 600px;
+    width: 100%;
+}
+#menu #logo img {
+    height: 300px;
+}
