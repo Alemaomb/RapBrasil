@@ -1,14 +1,59 @@
 /*Aula 01 - 01/04/23 */
 
 body, ul {
-    margin: 456px;
-    padding: 300px;
+    margin: 0px;
+    padding: 0px;
 }
-
+#header #menu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+  } 
+#header #menu a:hover {
+  color: black;
+  font-size: 1.2em;
+  transition: 0.3s;
+  text-shadow: 4px 4px 6px #0000007a;  
+}
+#logo img a:hover {
+  box-shadow: 5px 5px 6px #0000007a;
+  transition: 0,3s;
+}
+a:hover {
+    background: #5F29CC;
+}
+#logo img{
+  float: left;
+  height: 35px;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+}
+  #header {
+  width: 100%;
+  position: fixed;
+  z-index: 90;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #5F29CC;
+}
 #menu {
-    height: 600px;
-    width: 100%;
+ display: flex;
+ list-style: none;
+ gap: 1.0rem;
 }
-#menu #logo img {
-    height: 300px;
+#btn-mobile {
+ display: none;
+}
+#carouselExampleInterval {
+ position: relative;
+ z-index: 10;
+ padding-top: 80px;
 }
