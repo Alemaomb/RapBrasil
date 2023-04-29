@@ -5,7 +5,7 @@ body, ul {
     padding: 0px;
 }
 #header #menu a{
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -23,7 +23,7 @@ body, ul {
   transition: 0,3s;
 }
 a:hover {
-    background: #5F29CC;
+    background: #340763;
 }
 #logo img{
   float: left;
@@ -42,7 +42,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #5F29CC;
+  background: #340763;
 }
 #menu {
  display: flex;
@@ -55,5 +55,59 @@ a:hover {
 #carouselExampleInterval {
  position: relative;
  z-index: 10;
- padding-top: 80px;
+ padding-top: 55px;
+}
+/* Estilo CSS Banner */
+.section-banner-home {
+  width: 100%;
+  height: 500px;
+  margin-top: 0px;
+  padding: 50px;  
+  background-color: #ffffec;
+}
+.section-banner-home img{
+  height: 400px;
+}
+.section-banner-home .texto-banner{
+  margin-top: 30px;
+  font-size: 22px;
+}
+.section-banner-home .texto-banner h1{
+  font-size: 30px;
+  width: 60%;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p{
+  font-size: 15px;
+  margin-top: 20px;
+}
+.section-banner-home .texto-banner a{
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  padding: 4px 14px;
+  font-size: 15px;  
+}
+/* Fim CSS Banner*/
+
+/*CSS Destaque*/
+.destaque h2 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  margin: 30px auto;
+}
+.destaque p {
+  width: 77%;
+  text-align: center;
+  font-size: 14px;
+  margin: 30px auto;
+}
+.destaque figcaption {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
 }
