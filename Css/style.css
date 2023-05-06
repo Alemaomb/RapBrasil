@@ -1,17 +1,19 @@
-/*Aula 01 - 01/04/23 */
-
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans);
+/* Aula 01 - 01/04/23 */
 body, ul {
     margin: 0px;
     padding: 0px;
 }
 #header #menu a{
+    font-weight: 400;
     color: #ffffff;
     text-decoration: none;
     font-family: sans-serif;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 1.25em; 
     transition: 0.3s;
-  } 
+    margin-right: 0.5%;
+} 
 #header #menu a:hover {
   color: black;
   font-size: 1.2em;
@@ -31,10 +33,11 @@ a:hover {
   position: fixed;
   top: 15px;
   left: 20px;
+  border-radius: 200px; /* Criar borda circular na imagem */
 }
   #header {
   width: 100%;
-  position: fixed;
+  position: relative;
   z-index: 90;
   box-sizing: border-box;
   height: 70px;
@@ -52,10 +55,29 @@ a:hover {
 #btn-mobile {
  display: none;
 }
+/*
 #carouselExampleInterval {
  position: relative;
  z-index: 10;
- padding-top: 55px;
+ padding-top: 80px;
+}
+*/
+
+#carouselExampleInterval {
+  position: relative;
+  z-index: 10;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 4px 4px 6px #0000007a;
+  transition: 0.3s;
+  place-items: normal legacy;
+  margin-block: 10px;
+  height: auto;
+}
+#carouselExampleInterval .carousel-inner img{
+  max-height: 100%;
+  width: 100%;
 }
 /* Estilo CSS Banner */
 .section-banner-home {
@@ -63,7 +85,7 @@ a:hover {
   height: 500px;
   margin-top: 0px;
   padding: 50px;  
-  background-color: #ffffec;
+  background-color: #f8f8f8;
 }
 .section-banner-home img{
   height: 400px;
@@ -77,17 +99,25 @@ a:hover {
   width: 60%;
   font-weight: 500;
   padding-bottom: 20px;
+  color: rgb(0, 0, 0);
 }
 .section-banner-home .texto-banner p{
   font-size: 15px;
   margin-top: 20px;
+  color: rgb(0, 0, 0);
 }
 .section-banner-home .texto-banner a{
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  background-color: rgb(0, 0, 0);
-  padding: 4px 14px;
+  background-color: rgb(132, 0, 255);
+  padding: 0px 0px;
   font-size: 15px;  
+}
+.section-banner-home .texto-banner a:hover{
+  color: rgb(247, 247, 247);
+  text-shadow: 2px 2px 4px #888888;
+  font-size: 16px;
+  font-weight: bold;
 }
 /* Fim CSS Banner*/
 
@@ -110,4 +140,81 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   text-align: center;
+}
+.destaque a {
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  color: #0000007a;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px;
+  background-color: aqua;
+}
+.destaque a:hover{
+  color: brown;
+  text-shadow: 2px 2px 4px #ffffff;
+  font-size: 20px;
+}
+/* Fim CSS Destaque  */
+
+/* CSS Novidades */
+
+.novidades .text-body {
+  width: 80%;
+  margin: 70% auto;
+}
+.novidades h2 {
+  color: chartreuse;
+  font-size: 26px;
+  width: 70%;
+}
+.novidades p {
+  color: crimson;
+}
+.novidades a {
+  color: darkkhaki;
+  text-decoration: underline;
+  text-decoration-color: violet;
+  padding: 6px 12px;
+  background-color: darkorange;
+  font-weight: 400;
+}
+/* Fim CSS Novidades */
+
+/* Início CSS Galerias */
+
+.galeria {
+  text-align: center;
+  font-size: 24px;
+}
+.galeria p {
+  text-align: center;
+  width: 50%;
+  margin: 14px auto 50px;
+}
+/* Fim CSS Galerias */
+
+/* Início CSS Footer */
+
+.rodape {
+  padding: 50px 50px 0;
+}.rodape .info-contato p {
+  margin: 0px;
+}
+.rodape a {
+  text-decoration: none;
+  color: aqua;
+  font-size: 13px;
+}
+.rodape a:hover {
+  font-weight: bold;
+}
+.rodape .redes-sociais img {
+  width: 45px;
+  height: 40px;
+}
+.rodape p.direitos {
+  text-align: center;
+  margin-top: 40px;
 }
